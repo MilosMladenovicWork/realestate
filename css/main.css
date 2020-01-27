@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
 }
 
+h2 {
+  font-size: 32px;
+}
+
 #body-wrapper {
   width: 100%;
   overflow-x: hidden;
@@ -155,7 +159,7 @@ nav ul li .dropdown {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-color: #ff6e51;
-  min-width: 15vw;
+  min-width: 20vw;
   text-align: center;
   border-radius: 10px;
   opacity: 1;
@@ -223,25 +227,25 @@ nav ul li:hover .dropdown {
   padding: 1vw;
 }
 
-nav ul li:nth-of-type(4) a {
+nav ul #logo a {
   font-size: 30px;
   color: white;
 }
 
 @media (max-width: 767px) {
-  nav ul li:nth-of-type(4) a {
+  nav ul #logo a {
     font-size: 24px;
   }
 }
 
 @media (max-width: 1200px) {
-  nav ul li:nth-of-type(4) {
+  nav ul #logo {
     display: inline-block;
   }
 }
 
 @media (max-width: 767px) {
-  nav ul li:nth-of-type(4) {
+  nav ul #logo {
     display: inline-block;
   }
 }
@@ -335,7 +339,7 @@ nav ul li:nth-of-type(8) {
 
 @media (max-width: 767px) {
   .swiper-container {
-    height: 160vh;
+    height: 200vh;
   }
 }
 
@@ -357,6 +361,50 @@ nav ul li:nth-of-type(8) {
   transition: 1s;
 }
 
+#last-slide {
+  background-image: url("../images/coming-soon.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+  max-height: 200vh;
+}
+
+#last-slide .centered-items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#last-slide .centered-items div {
+  width: 50%;
+  margin-bottom: 5vh;
+}
+
+#last-slide .centered-items div .buttons {
+  width: auto;
+  text-align: center;
+}
+
+#last-slide .centered-items div .buttons a {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  #last-slide .centered-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #first-slide {
   background-image: url("../images/1.png");
   background-position: center;
@@ -364,12 +412,6 @@ nav ul li:nth-of-type(8) {
   background-repeat: no-repeat;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-#first-slide .swiper-text {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 #first-slide > h1:nth-of-type(1) {
@@ -442,8 +484,8 @@ nav ul li:nth-of-type(8) {
   font-size: 48px;
   color: white;
   text-transform: uppercase;
-  -webkit-animation: appearAndDisappear 40s 10s forwards infinite;
-          animation: appearAndDisappear 40s 10s forwards infinite;
+  -webkit-animation: appearAndDisappear 16s 4s forwards infinite;
+          animation: appearAndDisappear 16s 4s forwards infinite;
 }
 
 @media (max-width: 1200px) {
@@ -470,8 +512,8 @@ nav ul li:nth-of-type(8) {
   font-size: 48px;
   color: white;
   text-transform: uppercase;
-  -webkit-animation: appearAndDisappear 40s 30s forwards infinite;
-          animation: appearAndDisappear 40s 30s forwards infinite;
+  -webkit-animation: appearAndDisappear 16s 12s forwards infinite;
+          animation: appearAndDisappear 16s 12s forwards infinite;
 }
 
 @media (max-width: 1200px) {
@@ -611,6 +653,10 @@ nav ul li:nth-of-type(8) {
   border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
+.swiper-filter p em {
+  font-size: 22px;
+}
+
 .other-picture {
   position: static;
   z-index: 0;
@@ -629,7 +675,7 @@ nav ul li:nth-of-type(8) {
 .swiper-slide .swiper-filter {
   position: static;
   z-index: 0;
-  min-height: 160vh;
+  min-height: 200vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -645,8 +691,8 @@ nav ul li:nth-of-type(8) {
   background-repeat: no-repeat;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: appearAndDisappearPic 20s infinite;
-          animation: appearAndDisappearPic 20s infinite;
+  -webkit-animation: appearAndDisappearPic 8s infinite;
+          animation: appearAndDisappearPic 8s infinite;
 }
 
 @media (max-width: 767px) {
@@ -682,14 +728,14 @@ nav ul li:nth-of-type(8) {
 }
 
 .other-picture h1:nth-child(1) {
-  -webkit-animation: appearAndDisappear 40s forwards infinite;
-          animation: appearAndDisappear 40s forwards infinite;
+  -webkit-animation: appearAndDisappear 16s forwards infinite;
+          animation: appearAndDisappear 16s forwards infinite;
 }
 
 .other-picture h1:nth-child(2) {
   opacity: 0;
-  -webkit-animation: appearAndDisappear 40s 20s forwards infinite;
-          animation: appearAndDisappear 40s 20s forwards infinite;
+  -webkit-animation: appearAndDisappear 16s 8s forwards infinite;
+          animation: appearAndDisappear 16s 8s forwards infinite;
 }
 
 .other-picture .swiper-filter {
@@ -815,7 +861,7 @@ nav ul li:nth-of-type(8) {
   display: inline-block;
 }
 
-#first-swiper-text {
+.centered-swiper-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -827,6 +873,7 @@ nav ul li:nth-of-type(8) {
 
 .centered-items {
   width: 35vw;
+  color: #ff6e51;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,6 +1116,7 @@ nav ul li:nth-of-type(8) {
   width: 80vw;
   margin: auto;
   margin-bottom: 10vh;
+  padding-top: 20vh;
   text-align: center;
   color: #ff6e51;
 }
@@ -2434,7 +2482,7 @@ nav ul li:nth-of-type(8) {
   background-color: black;
 }
 
-#investor-application, #specialized-financing, #apartment-investing, #land, #funds, #selection {
+#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   min-height: 100vh;
@@ -2443,7 +2491,7 @@ nav ul li:nth-of-type(8) {
   color: white;
 }
 
-#investor-application #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
+#investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
   margin: auto;
   margin-top: 10vh;
   width: 80%;
@@ -2456,45 +2504,45 @@ nav ul li:nth-of-type(8) {
           flex-direction: column;
 }
 
-#investor-application #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
+#investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
   margin-bottom: 2.5vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
+  #investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
     text-align: center;
   }
 }
 
-#investor-application #investor-application-heading .heading-line, #specialized-financing #investor-application-heading .heading-line, #apartment-investing #investor-application-heading .heading-line, #land #investor-application-heading .heading-line, #funds #investor-application-heading .heading-line, #selection #investor-application-heading .heading-line {
+#investor-application #investor-application-heading .heading-line, #money-management #investor-application-heading .heading-line, #specialized-financing #investor-application-heading .heading-line, #apartment-investing #investor-application-heading .heading-line, #retirement-planning #investor-application-heading .heading-line, #oil-and-gas-investment #investor-application-heading .heading-line, #land #investor-application-heading .heading-line, #funds #investor-application-heading .heading-line, #selection #investor-application-heading .heading-line {
   background-color: white;
   margin-bottom: 5vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
+  #investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
     margin-top: 15vh;
   }
 }
 
-#investor-application .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
+#investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
   min-height: 100vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
+  #investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
-#investor-application p, #specialized-financing p, #apartment-investing p, #land p, #funds p, #selection p {
+#investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p {
   margin-left: 10%;
   width: 60%;
   margin-bottom: 10%;
 }
 
 @media (max-width: 767px) {
-  #investor-application p, #specialized-financing p, #apartment-investing p, #land p, #funds p, #selection p {
+  #investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p {
     text-align: center;
     width: 80%;
     margin: auto;
@@ -2503,7 +2551,7 @@ nav ul li:nth-of-type(8) {
 }
 
 @media (max-width: 767px) {
-  #investor-application, #specialized-financing, #apartment-investing, #land, #funds, #selection {
+  #investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     background-position: center;
@@ -2519,12 +2567,29 @@ nav ul li:nth-of-type(8) {
 
 #specialized-financing {
   background-image: url("../images/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
   #specialized-financing .swiper-filter {
     background-color: rgba(0, 0, 0, 0.7);
   }
+}
+
+#retirement-planning {
+  background-image: url("../images/6.jpg");
+  background-size: cover;
+}
+
+#oil-and-gas-investment {
+  background-image: url("../images/4.jpg");
+  background-size: cover;
+}
+
+#money-management {
+  background-image: url("../images/5.jpg");
+  background-size: cover;
 }
 
 #apartment-investing {
@@ -2634,6 +2699,8 @@ nav ul li:nth-of-type(8) {
   background-image: url("../images/funds.jpg");
   background-size: cover;
   background-position: bottom;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
 }
 
 #selection h1 {
@@ -2677,6 +2744,81 @@ nav ul li:nth-of-type(8) {
 
 #selection #open-investments #how-properties-section a:nth-child(3) .how-properties-single {
   background-image: url("../images/time.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#selection #open-investments #how-properties-section a:nth-child(4) .how-properties-single {
+  background-image: url("../images/risk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#financial-services {
+  background-image: url("../images/funds.jpg");
+  background-size: cover;
+  background-position: bottom;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+}
+
+#financial-services .interest-button {
+  bottom: 5vh;
+}
+
+#financial-services h1 {
+  color: white;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+}
+
+#financial-services .how-properties-single h2 {
+  margin-bottom: 1vh;
+}
+
+#financial-services .how-properties-single ol {
+  list-style-type: lower-alpha;
+}
+
+#financial-services .how-properties-single ol li {
+  text-align: left;
+}
+
+#financial-services .how-properties-single ol li span {
+  margin-left: 0.5vw;
+}
+
+#financial-services #open-investments {
+  margin-bottom: 25vh;
+}
+
+#financial-services #open-investments #how-properties-section a:nth-child(1) .how-properties-single {
+  background-image: url("../images/planning.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#financial-services #open-investments #how-properties-section a:nth-child(2) .how-properties-single {
+  background-image: url("../images/mortgage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#financial-services #open-investments #how-properties-section a:nth-child(3) .how-properties-single {
+  background-image: url("../images/credit.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#financial-services #open-investments #how-properties-section a:nth-child(4) .how-properties-single {
+  background-image: url("../images/monitoring.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#financial-services #open-investments #how-properties-section a:nth-child(5) .how-properties-single {
+  background-image: url("../images/legal.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2807,12 +2949,22 @@ nav ul li:nth-of-type(8) {
   color: white;
 }
 
+#indicators .indicator-single:hover ul {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+#indicators .indicator-single:hover p {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 #indicators .indicator-single {
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 2vh 1vw;
-  background-color: #3C68B4;
+  background: url("../images/indicator-texture.jpg");
   width: 35%;
   -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6), -3px -3px 6px rgba(0, 0, 0, 0.6);
           box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6), -3px -3px 6px rgba(0, 0, 0, 0.6);
@@ -2827,6 +2979,10 @@ nav ul li:nth-of-type(8) {
 }
 
 #indicators .indicator-single ul {
+  -webkit-transition: 1s;
+  transition: 1s;
+  max-height: 0;
+  opacity: 0;
   list-style-image: url(../images/dollar-sign.svg);
 }
 
@@ -2844,6 +3000,10 @@ nav ul li:nth-of-type(8) {
 }
 
 #indicators .indicator-single p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  max-height: 0;
+  opacity: 0;
   line-height: 40px;
 }
 

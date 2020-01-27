@@ -34,6 +34,10 @@ h1,h2,h3,h4,h5{
   display: inline-block;
 }
 
+h2{
+  font-size:32px;
+}
+
 #body-wrapper{
   width:100%;
   overflow-x:hidden;
@@ -130,7 +134,7 @@ nav{
         max-height:0;
         transform: translate(-50%, 0);
         background-color:$accent-color;
-        min-width:15vw;
+        min-width:20vw;
         text-align: center;
         border-radius:10px;
         opacity:1;
@@ -170,7 +174,7 @@ nav{
       max-height:1000px;
       padding:1vw;
     }
-    li:nth-of-type(4){
+    #logo{
       a{
         font-size:30px;
         color:white;
@@ -246,7 +250,7 @@ nav{
   position: relative;
   z-index:2;
   @include respond-to(small){
-    height:160vh;
+    height:200vh;
   }
 }
 
@@ -265,7 +269,33 @@ nav{
   background-repeat: no-repeat;
   transition:1s;
 }
-
+#last-slide{
+  background-image:url('../images/coming-soon.jpg');
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition:1s;
+  max-height:200vh;
+  .centered-items{
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    div{
+      width:50%;
+      margin-bottom:5vh;
+      .buttons{
+        width:auto;
+        text-align: center;
+        a{
+          margin:auto;
+        }
+      }
+    }
+    @include respond-to(small){
+      flex-direction:column;
+    }
+  }
+}
 
 #first-slide{
   background-image:url('../images/1.png');
@@ -273,9 +303,6 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   transition:1s;
-  .swiper-text{
-    align-items: flex-start;
-  }
   >h1:nth-of-type(1){
     width:40vw;
     position: absolute;
@@ -331,7 +358,7 @@ nav{
     font-size:48px;
     color:white;
     text-transform: uppercase;
-    animation:appearAndDisappear 40s 10s forwards infinite;
+    animation:appearAndDisappear 16s 4s forwards infinite;
     @include respond-to(large){
       left:50%;
       transform: translateX(-50%);
@@ -350,7 +377,7 @@ nav{
     font-size:48px;
     color:white;
     text-transform: uppercase;
-    animation:appearAndDisappear 40s 30s forwards infinite;
+    animation:appearAndDisappear 16s 12s forwards infinite;
     @include respond-to(large){
       left:50%;
       transform: translateX(-50%);
@@ -457,6 +484,9 @@ nav{
   width: 100%;
   background-color:rgba(0, 0, 0, 0.7);
   border:1px solid rgba(0, 0, 0, 0.7);
+  p em{
+    font-size:22px;
+  }
 }
 
 .other-picture{
@@ -474,7 +504,7 @@ nav{
 .swiper-slide .swiper-filter{
   position:static;
   z-index:0;
-  min-height:160vh;
+  min-height:200vh;
   width: 100%;
   background-color:rgba(0, 0, 0, 0.7);
   border:1px solid rgba(0, 0, 0, 0.7);
@@ -489,7 +519,7 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   transition:1s;
-  animation:appearAndDisappearPic 20s infinite;
+  animation:appearAndDisappearPic 8s infinite;
   .swiper-filter{
     @include respond-to(small){
       min-height: 200vh !important;
@@ -514,11 +544,11 @@ nav{
     }
   }
   h1:nth-child(1){
-    animation:appearAndDisappear 40s forwards infinite;
+    animation:appearAndDisappear 16s forwards infinite;
   }
   h1:nth-child(2){
     opacity:0;
-    animation:appearAndDisappear 40s 20s forwards infinite;
+    animation:appearAndDisappear 16s 8s forwards infinite;
   }
   .swiper-filter{
     min-height:100vh;
@@ -601,9 +631,10 @@ nav{
   }
 }
 
-#first-swiper-text{
+.centered-swiper-text{
   align-items: center;
 }
+
 
 .swiper-pagination-bullet{
   background-color:$accent-color !important;
@@ -611,6 +642,7 @@ nav{
 
 .centered-items{
   width:35vw;
+  color:$accent-color;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -772,6 +804,7 @@ nav{
   width:80vw;
   margin:auto;
   margin-bottom:10vh;
+  padding-top:20vh;
   text-align: center;
   color:$accent-color;
   .heading-line{
@@ -1649,7 +1682,7 @@ nav{
   background-color: black;
 }
 
-#investor-application, #specialized-financing, #apartment-investing, #land, #funds, #selection{
+#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection{
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   min-height:100vh;
   position:relative;
@@ -1707,12 +1740,30 @@ nav{
 
 #specialized-financing{
   background-image:url('../images/2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   @include respond-to(small){
     .swiper-filter{
       background-color:rgba(0, 0, 0, 0.7);
     }
   }
 }
+
+#retirement-planning{
+  background-image:url('../images/6.jpg');
+  background-size:cover;
+}
+
+#oil-and-gas-investment{
+  background-image:url('../images/4.jpg');
+  background-size:cover;
+}
+
+#money-management{
+  background-image:url('../images/5.jpg');
+  background-size:cover;
+}
+
 #apartment-investing{
   background-image:url('../images/3.jpg');
   background-size:cover;
@@ -1806,6 +1857,7 @@ nav{
   background-image:url('../images/funds.jpg');
   background-size:cover;
   background-position: bottom;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
   h1{
     color:white;
     margin-top:10vh;
@@ -1841,6 +1893,72 @@ nav{
       }
       a:nth-child(3) .how-properties-single{
         background-image:url('../images/time.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(4) .how-properties-single{
+        background-image:url('../images/risk.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+#financial-services{
+  
+  .interest-button{
+    bottom:5vh;
+  }
+  background-image:url('../images/funds.jpg');
+  background-size:cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+  h1{
+    color:white;
+    margin-top:10vh;
+    margin-left:10vw;
+    margin-bottom:10vh;
+  }
+  .how-properties-single{
+    h2{
+      margin-bottom:1vh;
+    }
+    ol{
+      list-style-type: lower-alpha;
+      li{
+        text-align: left;
+        span{
+          margin-left:0.5vw;
+        }
+      }
+    }
+  }
+  #open-investments{
+    margin-bottom:25vh;
+    #how-properties-section{
+      a:nth-child(1) .how-properties-single{
+        background-image:url('../images/planning.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(2) .how-properties-single{
+        background-image:url('../images/mortgage.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(3) .how-properties-single{
+        background-image:url('../images/credit.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(4) .how-properties-single{
+        background-image:url('../images/monitoring.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(5) .how-properties-single{
+        background-image:url('../images/legal.jpg');
         background-size:cover;
         background-position: center;
       }
@@ -1926,17 +2044,28 @@ nav{
   justify-content: center;
   margin-top:10vh;
   color:white;
+  .indicator-single:hover ul{
+    max-height:100vh;
+    opacity:1;
+  }
+  .indicator-single:hover p{
+    max-height:100vh;
+    opacity:1;
+  }
   .indicator-single{
     border-radius:10px;
     transition:0.5s;
     padding:2vh 1vw;
-    background-color:$primary-color;
+    background:url('../images/indicator-texture.jpg');
     width:35%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6), -3px -3px 6px rgba(0, 0, 0, 0.6);
     position:relative;
     display: flex;
     flex-direction: column;
     ul{
+      transition:1s;
+      max-height:0;
+      opacity:0;
       list-style-image: url(../images/dollar-sign.svg);
       li{
         font-size:32px;
@@ -1950,6 +2079,9 @@ nav{
       margin-bottom:2.5vh;
     }
     p{
+      transition:1s;
+      max-height:0;
+      opacity:0;
       line-height: 40px;
     }
     .indicator-number{
