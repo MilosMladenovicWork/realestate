@@ -34,6 +34,7 @@ const menu = document.querySelector('#mobile-menu')
 const menuButton = document.querySelector('#menu-button')
 
 menuButton.addEventListener('click', () => {
+  console.log('hey')
   if(menu.style.maxHeight === '120vh'){
     return menu.style.maxHeight = '0vh';
   }
