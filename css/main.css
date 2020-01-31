@@ -2482,7 +2482,7 @@ nav ul li:nth-of-type(8) {
   background-color: black;
 }
 
-#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection {
+#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection, #all-products {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   min-height: 100vh;
@@ -2491,7 +2491,7 @@ nav ul li:nth-of-type(8) {
   color: white;
 }
 
-#investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
+#investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading, #all-products #investor-application-heading {
   margin: auto;
   margin-top: 10vh;
   width: 80%;
@@ -2504,45 +2504,45 @@ nav ul li:nth-of-type(8) {
           flex-direction: column;
 }
 
-#investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
+#investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1, #all-products #investor-application-heading h1 {
   margin-bottom: 2.5vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1 {
+  #investor-application #investor-application-heading h1, #money-management #investor-application-heading h1, #specialized-financing #investor-application-heading h1, #apartment-investing #investor-application-heading h1, #retirement-planning #investor-application-heading h1, #oil-and-gas-investment #investor-application-heading h1, #land #investor-application-heading h1, #funds #investor-application-heading h1, #selection #investor-application-heading h1, #all-products #investor-application-heading h1 {
     text-align: center;
   }
 }
 
-#investor-application #investor-application-heading .heading-line, #money-management #investor-application-heading .heading-line, #specialized-financing #investor-application-heading .heading-line, #apartment-investing #investor-application-heading .heading-line, #retirement-planning #investor-application-heading .heading-line, #oil-and-gas-investment #investor-application-heading .heading-line, #land #investor-application-heading .heading-line, #funds #investor-application-heading .heading-line, #selection #investor-application-heading .heading-line {
+#investor-application #investor-application-heading .heading-line, #money-management #investor-application-heading .heading-line, #specialized-financing #investor-application-heading .heading-line, #apartment-investing #investor-application-heading .heading-line, #retirement-planning #investor-application-heading .heading-line, #oil-and-gas-investment #investor-application-heading .heading-line, #land #investor-application-heading .heading-line, #funds #investor-application-heading .heading-line, #selection #investor-application-heading .heading-line, #all-products #investor-application-heading .heading-line {
   background-color: white;
   margin-bottom: 5vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading {
+  #investor-application #investor-application-heading, #money-management #investor-application-heading, #specialized-financing #investor-application-heading, #apartment-investing #investor-application-heading, #retirement-planning #investor-application-heading, #oil-and-gas-investment #investor-application-heading, #land #investor-application-heading, #funds #investor-application-heading, #selection #investor-application-heading, #all-products #investor-application-heading {
     margin-top: 15vh;
   }
 }
 
-#investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
+#investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter, #all-products .swiper-filter {
   min-height: 100vh;
 }
 
 @media (max-width: 767px) {
-  #investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter {
+  #investor-application .swiper-filter, #money-management .swiper-filter, #specialized-financing .swiper-filter, #apartment-investing .swiper-filter, #retirement-planning .swiper-filter, #oil-and-gas-investment .swiper-filter, #land .swiper-filter, #funds .swiper-filter, #selection .swiper-filter, #all-products .swiper-filter {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
-#investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p {
+#investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p, #all-products p {
   margin-left: 10%;
   width: 60%;
   margin-bottom: 10%;
 }
 
 @media (max-width: 767px) {
-  #investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p {
+  #investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p, #all-products p {
     text-align: center;
     width: 80%;
     margin: auto;
@@ -2551,7 +2551,7 @@ nav ul li:nth-of-type(8) {
 }
 
 @media (max-width: 767px) {
-  #investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection {
+  #investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection, #all-products {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     background-position: center;
@@ -2603,13 +2603,13 @@ nav ul li:nth-of-type(8) {
   }
 }
 
-#land {
+#land, #all-products {
   background-image: url("../images/open-investments.jpg");
   background-size: cover;
   background-position: bottom;
 }
 
-#land h1 {
+#land h1, #all-products h1 {
   margin-top: 10vh;
   margin-left: 10vw;
   margin-bottom: 10vh;
@@ -2617,13 +2617,13 @@ nav ul li:nth-of-type(8) {
 }
 
 @media (max-width: 1200px) {
-  #land h1 {
+  #land h1, #all-products h1 {
     margin-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  #land h1 {
+  #land h1, #all-products h1 {
     text-align: center;
   }
 }
@@ -2750,6 +2750,52 @@ nav ul li:nth-of-type(8) {
 
 #selection #open-investments #how-properties-section a:nth-child(4) .how-properties-single {
   background-image: url("../images/risk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments {
+  margin-bottom: 25vh;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(1) .how-properties-single {
+  background-image: url("../images/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(2) .how-properties-single {
+  background-image: url("../images/6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(3) .how-properties-single {
+  background-image: url("../images/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(4) .how-properties-single {
+  background-image: url("../images/4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(5) .how-properties-single {
+  background-image: url("../images/5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(6) .how-properties-single {
+  background-image: url("../images/1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#all-products #open-investments #how-properties-section a:nth-child(7) .how-properties-single {
+  background-image: url("../images/coming-soon.jpg");
   background-size: cover;
   background-position: center;
 }

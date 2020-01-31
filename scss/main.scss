@@ -453,6 +453,8 @@ nav{
   }
 }
 
+
+
 #fourth-slide{
   background-image:url('../images/5.jpg');
   background-position:bottom;
@@ -1682,7 +1684,7 @@ nav{
   background-color: black;
 }
 
-#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection{
+#investor-application, #money-management, #specialized-financing, #apartment-investing, #retirement-planning, #oil-and-gas-investment, #land, #funds, #selection, #all-products{
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   min-height:100vh;
   position:relative;
@@ -1774,7 +1776,7 @@ nav{
   }
 }
 
-#land{
+#land, #all-products{
   background-image:url('../images/open-investments.jpg');
   background-size:cover;
   background-position: bottom;
@@ -1898,6 +1900,49 @@ nav{
       }
       a:nth-child(4) .how-properties-single{
         background-image:url('../images/risk.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+#all-products{
+  #open-investments{
+    margin-bottom:25vh;
+    #how-properties-section{
+      a:nth-child(1) .how-properties-single{
+        background-image:url('../images/2.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(2) .how-properties-single{
+        background-image:url('../images/6.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(3) .how-properties-single{
+        background-image:url('../images/3.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(4) .how-properties-single{
+        background-image:url('../images/4.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(5) .how-properties-single{
+        background-image:url('../images/5.jpg');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(6) .how-properties-single{
+        background-image:url('../images/1.png');
+        background-size:cover;
+        background-position: center;
+      }
+      a:nth-child(7) .how-properties-single{
+        background-image:url('../images/coming-soon.jpg');
         background-size:cover;
         background-position: center;
       }
