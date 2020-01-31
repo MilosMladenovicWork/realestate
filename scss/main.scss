@@ -290,6 +290,9 @@ nav{
           margin:auto;
         }
       }
+      @include respond-to(small){
+        width:100%;
+      }
     }
     @include respond-to(small){
       flex-direction:column;
@@ -1720,11 +1723,14 @@ nav{
     margin-left:10%;
     width:60%;
     margin-bottom:10%;
+    @include respond-to(large){
+      margin-bottom:30vh;
+    }
     @include respond-to(small){
       text-align: center;
       width:80%;
       margin:auto;
-      margin-bottom:15%;
+      margin-bottom:30vh;
     }
   }
   @include respond-to(small){
@@ -1743,6 +1749,7 @@ nav{
 #specialized-financing{
   background-image:url('../images/2.jpg');
   background-position: center;
+  background-size:cover;
   background-repeat: no-repeat;
   @include respond-to(small){
     .swiper-filter{
@@ -1754,11 +1761,17 @@ nav{
 #retirement-planning{
   background-image:url('../images/6.jpg');
   background-size:cover;
+  @include respond-to(large){
+    background-position:center;
+  }
 }
 
 #oil-and-gas-investment{
   background-image:url('../images/4.jpg');
   background-size:cover;
+  @include respond-to(large){
+    background-position:center;
+  }
 }
 
 #money-management{
@@ -1769,6 +1782,9 @@ nav{
 #apartment-investing{
   background-image:url('../images/3.jpg');
   background-size:cover;
+  @include respond-to(large){
+    background-position:center;
+  }
   @include respond-to(small){
     .swiper-filter{
       background-color:rgba(0, 0, 0, 0.7);
@@ -1797,6 +1813,9 @@ nav{
 
 #funds #open-investments #how-properties-section .how-properties-single{
   height:30vh;
+  @include respond-to(small){
+    height:40vh;
+  }
 }
 
 #funds{
@@ -1812,6 +1831,9 @@ nav{
   .how-properties-single{
     h2{
       margin-bottom:1vh;
+      @include respond-to(small){
+        margin-bottom:0;
+      }
     }
     ol{
       list-style-type: lower-alpha;
@@ -1905,6 +1927,16 @@ nav{
       }
     }
   }
+  @include respond-to(small){
+    .interest-button{
+      width:100%;
+      display:flex;
+      align-items: center;
+      a{
+        margin:auto;
+      }
+    }
+  }
 }
 
 #all-products{
@@ -1951,9 +1983,9 @@ nav{
 }
 
 #financial-services{
-  
+  position:relative;
   .interest-button{
-    bottom:5vh;
+    bottom:16vh;
   }
   background-image:url('../images/funds.jpg');
   background-size:cover;
@@ -2166,6 +2198,12 @@ nav{
     p{
       font-size:32px;
       margin-top:2vh;
+    }
+    @include respond-to(large){
+      text-align: center;
+      p{
+        line-height: 42px;
+      }
     }
   }
 }

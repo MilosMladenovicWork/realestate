@@ -397,6 +397,12 @@ nav ul li:nth-of-type(8) {
 }
 
 @media (max-width: 767px) {
+  #last-slide .centered-items div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
   #last-slide .centered-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2541,12 +2547,18 @@ nav ul li:nth-of-type(8) {
   margin-bottom: 10%;
 }
 
+@media (max-width: 1200px) {
+  #investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p, #all-products p {
+    margin-bottom: 30vh;
+  }
+}
+
 @media (max-width: 767px) {
   #investor-application p, #money-management p, #specialized-financing p, #apartment-investing p, #retirement-planning p, #oil-and-gas-investment p, #land p, #funds p, #selection p, #all-products p {
     text-align: center;
     width: 80%;
     margin: auto;
-    margin-bottom: 15%;
+    margin-bottom: 30vh;
   }
 }
 
@@ -2568,6 +2580,7 @@ nav ul li:nth-of-type(8) {
 #specialized-financing {
   background-image: url("../images/2.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -2582,9 +2595,21 @@ nav ul li:nth-of-type(8) {
   background-size: cover;
 }
 
+@media (max-width: 1200px) {
+  #retirement-planning {
+    background-position: center;
+  }
+}
+
 #oil-and-gas-investment {
   background-image: url("../images/4.jpg");
   background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  #oil-and-gas-investment {
+    background-position: center;
+  }
 }
 
 #money-management {
@@ -2595,6 +2620,12 @@ nav ul li:nth-of-type(8) {
 #apartment-investing {
   background-image: url("../images/3.jpg");
   background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  #apartment-investing {
+    background-position: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2632,6 +2663,12 @@ nav ul li:nth-of-type(8) {
   height: 30vh;
 }
 
+@media (max-width: 767px) {
+  #funds #open-investments #how-properties-section .how-properties-single {
+    height: 40vh;
+  }
+}
+
 #funds {
   background-image: url("../images/funds.jpg");
   background-size: cover;
@@ -2647,6 +2684,12 @@ nav ul li:nth-of-type(8) {
 
 #funds .how-properties-single h2 {
   margin-bottom: 1vh;
+}
+
+@media (max-width: 767px) {
+  #funds .how-properties-single h2 {
+    margin-bottom: 0;
+  }
 }
 
 #funds .how-properties-single ol {
@@ -2754,6 +2797,21 @@ nav ul li:nth-of-type(8) {
   background-position: center;
 }
 
+@media (max-width: 767px) {
+  #selection .interest-button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #selection .interest-button a {
+    margin: auto;
+  }
+}
+
 #all-products #open-investments {
   margin-bottom: 25vh;
 }
@@ -2801,6 +2859,7 @@ nav ul li:nth-of-type(8) {
 }
 
 #financial-services {
+  position: relative;
   background-image: url("../images/funds.jpg");
   background-size: cover;
   background-position: bottom;
@@ -2809,7 +2868,7 @@ nav ul li:nth-of-type(8) {
 }
 
 #financial-services .interest-button {
-  bottom: 5vh;
+  bottom: 16vh;
 }
 
 #financial-services h1 {
@@ -3119,5 +3178,14 @@ nav ul li:nth-of-type(8) {
 .under-construction .image-and-text p {
   font-size: 32px;
   margin-top: 2vh;
+}
+
+@media (max-width: 1200px) {
+  .under-construction .image-and-text {
+    text-align: center;
+  }
+  .under-construction .image-and-text p {
+    line-height: 42px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
