@@ -106,6 +106,19 @@ h2{
   }
 }
 
+.land-banking-main-header{
+  position:absolute;
+  z-index:100;
+  top:0%;
+  right:0;
+  text-align:right;
+  margin-right:20px;
+  @include respond-to(large){
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
 nav{
   z-index:10;
   position:fixed;
@@ -129,6 +142,7 @@ nav{
         color:white;
         font-weight: 600;
         margin-top:10px;
+        font-weight: 400;
       }
       .dropdown{
         position:absolute;
@@ -158,6 +172,7 @@ nav{
             margin-top:10px;
             a{
               margin-top:0;
+              font-weight:400;
             }
             svg{
               height:15px;
@@ -993,6 +1008,29 @@ nav{
   }
   @include respond-to(small){
     flex-direction: column;
+  }
+}
+
+#how-we-index{
+  #how-we{
+    background-image: url('../images/steps.jpg');
+  }
+  #how-we-section{
+    margin-top:10vh;
+    width:95vw;
+    h1{
+      text-align:center;
+      width:100%;
+    }
+  }
+  .how-we-item{
+    width:19%;
+    ol{
+      list-style-type: lower-alpha;
+      li{
+        margin-bottom:5px;
+      }
+    }
   }
 }
 

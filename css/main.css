@@ -129,6 +129,22 @@ h2 {
   margin-top: 2vh;
 }
 
+.land-banking-main-header {
+  position: absolute;
+  z-index: 100;
+  top: 0%;
+  right: 0;
+  text-align: right;
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .land-banking-main-header {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
 nav {
   z-index: 10;
   position: fixed;
@@ -164,6 +180,7 @@ nav ul li a {
   color: white;
   font-weight: 600;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 nav ul li .dropdown {
@@ -218,6 +235,7 @@ nav ul li .dropdown ul li {
 
 nav ul li .dropdown ul li a {
   margin-top: 0;
+  font-weight: 400;
 }
 
 nav ul li .dropdown ul li svg {
@@ -1410,6 +1428,32 @@ nav ul li:nth-of-type(8) {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+#how-we-index #how-we {
+  background-image: url("../images/steps.jpg");
+}
+
+#how-we-index #how-we-section {
+  margin-top: 10vh;
+  width: 95vw;
+}
+
+#how-we-index #how-we-section h1 {
+  text-align: center;
+  width: 100%;
+}
+
+#how-we-index .how-we-item {
+  width: 19%;
+}
+
+#how-we-index .how-we-item ol {
+  list-style-type: lower-alpha;
+}
+
+#how-we-index .how-we-item ol li {
+  margin-bottom: 5px;
 }
 
 #how-properties {
