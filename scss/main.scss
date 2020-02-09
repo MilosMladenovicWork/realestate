@@ -216,6 +216,15 @@ nav{
   }
 }
 
+#mission-and-what{
+  display:flex;
+  width:100%;
+  min-height:unset;
+  @include respond-to(small){
+    flex-direction: column;
+  }
+}
+
 #nav-background{
   z-index:1;
   background-color:$primary-color;
@@ -253,6 +262,17 @@ nav{
   width:100%;
   position: relative;
   z-index:2;
+  .centered-items{
+    p{
+      font-size:16px;
+    }
+    .big{
+      font-size:32px;
+    }
+    .medium{
+      font-size:26px;
+    }
+  }
   @include respond-to(small){
     height:200vh;
   }
@@ -701,12 +721,15 @@ nav{
   background-image:url('../images/our-mission.jpg');
   background-size: cover;
   background-position: bottom;
-  height:50vh;
+  height:auto;
+  width:50vw;
   .swiper-filter{
     padding-left:10vw;
     padding-right:10vw;
     padding-top:10vh;
     padding-bottom:10vh;
+    min-height:auto;
+    height:100%;
   }
   #our-mission-heading{
     color:white;
@@ -728,12 +751,15 @@ nav{
     }
   }
   p{
-    width:60vw;
+    width:auto;
     color:white;
     @include respond-to(small){
       width:100%;
       text-align: center;
     }
+  }
+  @include respond-to(large){
+    width:100vw;
   }
 }
 
@@ -750,12 +776,12 @@ nav{
   background-position: center;
   background-size: cover;
   position:relative;
-  margin-bottom:10vh;
+  width:50vw;
+  height:auto;
   .swiper-filter{
     padding-left:10vw;
     padding-right:10vw;
-    margin-bottom:10vh;
-    min-height:20vh;
+    min-height:auto;
   }
   #what-we-do-heading{
     margin-bottom:5vh;
@@ -806,6 +832,7 @@ nav{
   }
   @include respond-to(small){
     background-position:center;
+    width:100vw;
   }
 }
 
@@ -822,7 +849,7 @@ nav{
 }
 
 #our-core-section{
-  width:80vw;
+  width:95vw;
   display:flex;
   text-align:center;
   margin:auto;
@@ -830,7 +857,7 @@ nav{
   flex-wrap: wrap;
   justify-content: space-evenly;
   .our-core-item{
-    width:30vw;
+    width:18vw;
     margin-bottom:5vh;
     img:hover{
       filter:drop-shadow(0 3px 7px rgb(119, 119, 119))
