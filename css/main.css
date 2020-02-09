@@ -2432,6 +2432,7 @@ nav ul li:nth-of-type(8) {
 
 #footer {
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
   background-image: url("../images/footer.jpg");
   background-position: center;
@@ -2441,7 +2442,7 @@ nav ul li:nth-of-type(8) {
 }
 
 #footer .swiper-filter {
-  height: 100vh;
+  height: 100%;
 }
 
 #footer .get-contact {
@@ -2527,6 +2528,7 @@ nav ul li:nth-of-type(8) {
   margin-top: 2.5vh;
   margin-left: 10%;
   border-radius: 10px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -2614,6 +2616,27 @@ nav ul li:nth-of-type(8) {
     width: 80%;
     margin: auto;
     margin-bottom: 30vh;
+  }
+}
+
+#investor-application p:nth-child(2), #money-management p:nth-child(2), #specialized-financing p:nth-child(2), #apartment-investing p:nth-child(2), #retirement-planning p:nth-child(2), #oil-and-gas-investment p:nth-child(2), #land p:nth-child(2), #funds p:nth-child(2), #selection p:nth-child(2), #all-products p:nth-child(2) {
+  margin-left: 10%;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  #investor-application p:nth-child(2), #money-management p:nth-child(2), #specialized-financing p:nth-child(2), #apartment-investing p:nth-child(2), #retirement-planning p:nth-child(2), #oil-and-gas-investment p:nth-child(2), #land p:nth-child(2), #funds p:nth-child(2), #selection p:nth-child(2), #all-products p:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  #investor-application p:nth-child(2), #money-management p:nth-child(2), #specialized-financing p:nth-child(2), #apartment-investing p:nth-child(2), #retirement-planning p:nth-child(2), #oil-and-gas-investment p:nth-child(2), #land p:nth-child(2), #funds p:nth-child(2), #selection p:nth-child(2), #all-products p:nth-child(2) {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 }
 

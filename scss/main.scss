@@ -1642,13 +1642,14 @@ nav{
 
 #footer{
   position:relative;
+  overflow:hidden;
   min-height:100vh;
   background-image:url('../images/footer.jpg');
   background-position:center;
   background-size: cover;
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%);
   .swiper-filter{
-    height:100vh;
+    height:100%;
   }
   .get-contact{
     margin:auto;
@@ -1706,6 +1707,7 @@ nav{
   margin-top:2.5vh;
   margin-left:10%;
   border-radius:10px;
+  padding-bottom:100px;
   @include respond-to(small){
     width:80%;
   }
@@ -1762,6 +1764,20 @@ nav{
       width:80%;
       margin:auto;
       margin-bottom:30vh;
+    }
+  }
+  p:nth-child(2){
+    margin-left:10%;
+    width:60%;
+    margin-bottom:50px;
+    @include respond-to(large){
+      margin-bottom:50px;
+    }
+    @include respond-to(small){
+      text-align: center;
+      width:80%;
+      margin:auto;
+      margin-bottom:50px;
     }
   }
   @include respond-to(small){
