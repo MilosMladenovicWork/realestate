@@ -951,7 +951,9 @@ nav{
     background-color:white;
     margin-bottom:10vh;
   }
-  
+  @include respond-to(small){
+    padding-top:5vh;
+  }
 }
 
 #how-we-section{
@@ -1031,12 +1033,16 @@ nav{
         margin-bottom:5px;
       }
     }
+    @include respond-to(large){
+      width:47%;
+      margin-bottom:5vh;
+    }
     @include respond-to(small){
       width:100%;
       margin-bottom:5vh;
     }
   }
-  @include respond-to(small){
+  @include respond-to(large){
     .how-we-item:nth-child(3){
       margin-bottom:5vh;
     }
