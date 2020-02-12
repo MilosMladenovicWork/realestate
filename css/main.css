@@ -1456,6 +1456,25 @@ nav ul li:nth-of-type(8) {
   margin-bottom: 5px;
 }
 
+@media (max-width: 767px) {
+  #how-we-index .how-we-item {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #how-we-index .how-we-item:nth-child(3) {
+    margin-bottom: 5vh;
+  }
+  #how-we-index .how-we-item:nth-child(4) {
+    margin-bottom: 5vh;
+  }
+  #how-we-index .how-we-item:last-child {
+    margin-bottom: 10vh;
+  }
+}
+
 #how-properties {
   position: relative;
 }
