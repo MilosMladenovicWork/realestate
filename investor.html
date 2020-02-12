@@ -368,11 +368,11 @@
     <div class='container'>
       <div id='investor-application-form'>
         <div class='swiper-filter'>
-          <form action="https://formspree.io"
+          <form action="https://formspree.io/careers@1844grownow.com"
           target='_blank'
           method="POST">
-            <input type='text' name='fullname' placeholder='Full Name' required data-sal='slide-up' data-sal-duration="1000">
-            <input type='text' name='email' placeholder='Email Address' data-sal='slide-up' data-sal-duration="1000">
+            <input required type='text' name='fullname' placeholder='Full Name' required data-sal='slide-up' data-sal-duration="1000">
+            <input required type='text' name='email' placeholder='Email Address' data-sal='slide-up' data-sal-duration="1000">
             <input type='number' name='phonenumber' placeholder='Phone' data-sal='slide-up' data-sal-duration="1000">
             <input type='text' name='streetaddress' placeholder='Current Residence Street Address' data-sal='slide-up' data-sal-duration="1000">
             <input type='text' name='city' placeholder='Current Residence City' data-sal='slide-up' data-sal-duration="1000">
@@ -381,6 +381,7 @@
             <input type='text' name='country' placeholder='Country' data-sal='slide-up' data-sal-duration="1000">
             <p>What is your current net worth?</p>
             <select name='networth' data-sal='slide-up' data-sal-duration="1000">
+              <option value='Not selected'>Please Select</option>
               <option>Under $250K</option>
               <option>$250K to $500K</option>
               <option>$500K to $1 Million</option>
@@ -414,35 +415,36 @@
             </label>
             <p>What types of investments do you currently have?</p>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Real Estate'>
+              <input type='checkbox' value='Real Estate' name='What types of investments do you currently have?'>
               <p>Real Estate</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Stocks'>
+              <input type='checkbox' value='Stocks' name='What types of investments do you currently have?'>
               <p>Stocks</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Bonds'>
+              <input type='checkbox' value='Bonds' name='What types of investments do you currently have?'>
               <p>Bonds</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Retirement Funds'>
+              <input type='checkbox' value='Retirement Funds' name='What types of investments do you currently have?'>
               <p> Retirement Funds</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Gold'>
+              <input type='checkbox' value='Gold' name='What types of investments do you currently have?'>
               <p>Gold</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Bitcoin'>
+              <input type='checkbox' value='Bitcoin' name='What types of investments do you currently have?'>
               <p>Bitcoin</p>
             </label>
             <label>
-              <input type='checkbox' name='What types of investments do you currently have? - Running Business'>
+              <input type='checkbox' value='Running Business' name='What types of investments do you currently have?'>
               <p>Running Business</p>
             </label>
             <p>What is the value of your other investments?</p>
             <select name='investments-value' data-sal='slide-up' data-sal-duration="1000">
+              <option value='Not selected'>Please Select</option>
               <option value='Under $250K'>Under $250K</option>
               <option value='$250K to $500K'>$250K to $500K</option>
               <option value='$500K to $1 Million'>$500K to $1 Million</option>
@@ -450,6 +452,7 @@
             </select>
             <p>What kind of returns are you getting from your other investments?</p>
             <select name='investments-return' data-sal='slide-up' data-sal-duration="1000">
+              <option value='Not selected'>Please Select</option>
               <option value='0% to 5% per year'>0% to 5% per year</option>
               <option value='5% to 10% per year'>5% to 10% per year</option>
               <option value='10% to 20% per year'>10% to 20% per year</option>
@@ -470,19 +473,19 @@
             </label>
             <p>What are your investment objectives?</p>
             <label>
-              <input type='checkbox' name='What are your investment objectives? - Cash Flow'>
+              <input type='checkbox' value='Cash Flow' name='What are your investment objectives?'>
               <p>Cash Flow</p>
             </label>
             <label>
-              <input type='checkbox' name='What are your investment objectives? - Appreciation'>
+              <input type='checkbox' value='Appreciation' name='What are your investment objectives?'>
               <p>Appreciation</p>
             </label>
             <label>
-              <input type='checkbox' name='What are your investment objectives? - Financial Freedom'>
+              <input type='checkbox' value='Financial Freedom' name='What are your investment objectives?'>
               <p>Financial Freedom</p>
             </label>
             <label>
-              <input type='checkbox' name='What are your investment objectives? - Supplementary Income'>
+              <input type='checkbox' value='Supplementary Income' name='What are your investment objectives?'>
               <p>Supplementary Income</p>
             </label>
             <p>What is your investment time horizon?</p>
@@ -504,6 +507,7 @@
             </label>
             <p>What liquidity needs do you have?</p>
             <select name='liquidity-needs' data-sal='slide-up' data-sal-duration="1000">
+              <option value='Not selected'>Please Select</option>
               <option value='$2000 to $5000 per month'>$2000 to $5000 per month</option>
               <option value='$5000 to $10000 per month'>$5000 to $10000 per month</option>
               <option value='$10000 to $20000 per month'>$10000 to $20000 per month</option>
@@ -511,37 +515,38 @@
             </select>
             <p>How would you rate your risk tolerance?</p>
             <select name='risk-tolerance' data-sal='slide-up' data-sal-duration="1000">
+              <option value='Not selected'>Please Select</option>
               <option value='High'>High</option>
               <option value='Medium'>Medium</option>
               <option value='Low'>Low</option>
             </select>
             <p>Products of Interest:</p>
             <label>
-              <input type='checkbox' name='Products of Interest - Specialized Financing'>
+              <input type='checkbox' value='Specialized Financing' name='Products of Interest'>
               <p>Specialized Financing</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Retirement Planning'>
+              <input type='checkbox' value='Retirement Planning' name='Products of Interest'>
               <p>Retirement Planning</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Apartment Investing'>
+              <input type='checkbox' value='Apartment Investing' name='Products of Interest'>
               <p>Apartment Investing</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Oil and Gas Investment'>
+              <input type='checkbox' value='Oil and Gas Investment' name='Products of Interest'>
               <p>Oil and Gas Investment</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Active Money Management'>
+              <input type='checkbox' value='Active Money Management' name='Products of Interest'>
               <p>Active Money Management</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Land Banking'>
+              <input type='checkbox' value='Land Banking' name='Products of Interest'>
               <p>Land Banking</p>
             </label>
             <label>
-              <input type='checkbox' name='Products of Interest - Other Financial Services'>
+              <input type='checkbox' value='Other Financial Services' name='Products of Interest'>
               <p>Other Financial Services</p>
             </label>
             <button id='investor-button' type='submit'>SUBMIT</button>
