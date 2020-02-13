@@ -1,23 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 input, ::-webkit-input-placeholder, textarea {
-  font-family: 'Bitter', serif;
+  font-family: 'Robot', sans-serif;
 }
 
 input, :-ms-input-placeholder, textarea {
-  font-family: 'Bitter', serif;
+  font-family: 'Robot', sans-serif;
 }
 
 input, ::-ms-input-placeholder, textarea {
-  font-family: 'Bitter', serif;
+  font-family: 'Robot', sans-serif;
 }
 
 input, ::placeholder, textarea {
-  font-family: 'Bitter', serif;
+  font-family: 'Robot', sans-serif;
 }
 
 body {
@@ -713,6 +713,15 @@ nav ul li:nth-of-type(8) {
   transition: 1s;
 }
 
+#main-slide {
+  background-image: url("../images/main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .swiper-filter {
   position: static;
   z-index: 0;
@@ -1220,7 +1229,7 @@ nav ul li:nth-of-type(8) {
 }
 
 #our-core-section .our-core-item {
-  width: 18vw;
+  width: 21vw;
   margin-bottom: 5vh;
 }
 
@@ -1454,11 +1463,7 @@ nav ul li:nth-of-type(8) {
   width: 19%;
 }
 
-#how-we-index .how-we-item ol {
-  list-style-type: lower-alpha;
-}
-
-#how-we-index .how-we-item ol li {
+#how-we-index .how-we-item ul li {
   margin-bottom: 5px;
 }
 
@@ -2540,6 +2545,10 @@ nav ul li:nth-of-type(8) {
     width: 100%;
     text-align: center;
   }
+}
+
+#footer .get-contact h3 {
+  margin-bottom: 2.5vh;
 }
 
 #footer .get-contact .get-contact-item {
