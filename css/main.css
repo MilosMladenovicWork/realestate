@@ -722,6 +722,49 @@ nav ul li:nth-of-type(8) {
   transition: 1s;
 }
 
+#main-slide .centered-items {
+  width: 100%;
+  height: 80vh;
+}
+
+#main-slide .centered-items h1:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  -webkit-animation: appear 1s 1s 1 forwards;
+          animation: appear 1s 1s 1 forwards;
+  opacity: 0;
+}
+
+#main-slide .centered-items h1:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  -webkit-animation: appear 1s 2s 1 forwards;
+          animation: appear 1s 2s 1 forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .swiper-filter {
   position: static;
   z-index: 0;
