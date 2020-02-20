@@ -1522,6 +1522,9 @@ nav ul li:nth-of-type(8) {
     width: 100%;
     margin-bottom: 5vh;
   }
+  #how-we-index .how-we-item p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2280,7 +2283,7 @@ nav ul li:nth-of-type(8) {
   display: flex;
 }
 
-#additional-section .additional-item img {
+#additional-section .additional-item iframe {
   width: 50%;
   border-radius: 10px 0 0 10px;
   -o-object-fit: cover;
@@ -2288,14 +2291,14 @@ nav ul li:nth-of-type(8) {
 }
 
 @media (max-width: 1200px) {
-  #additional-section .additional-item img {
+  #additional-section .additional-item iframe {
     width: 100%;
     border-radius: 10px;
   }
 }
 
 @media (max-width: 767px) {
-  #additional-section .additional-item img {
+  #additional-section .additional-item iframe {
     width: 100%;
     border-radius: 10px;
   }

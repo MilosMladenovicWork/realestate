@@ -1076,6 +1076,9 @@ nav{
     @include respond-to(small){
       width:100%;
       margin-bottom:5vh;
+      p{
+        text-align: center;
+      }
     }
   }
   @include respond-to(large){
@@ -1565,7 +1568,7 @@ nav{
     border:1px solid #707070;
     margin-bottom:2.5vh;
     display:flex;
-    img{
+    iframe{
       width:50%;
       border-radius:10px 0 0 10px;
       object-fit: cover;
